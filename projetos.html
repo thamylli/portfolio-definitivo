@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/projetos.css">
+</head>
+<body>
+    <header>
+        <section class="cabecalho-container">
+            <div class="cabecalho-logo">aqui vai a logo</div>
+            <div class="cabecalho-menu">
+                <a class="cabecalho-sobre" href="#">sobre</a>
+                <a href="#">projetos</a>
+                <a href="#">certificados</a>
+                <a href="#">contato</a>
+            </div>
+            <div class="cabecalho-dark">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle">Dark Mode</label>
+            </div>
+        </section>
+        <section>
+            <div class="nuvenzinha">'</div>
+        </section>
+    </header>
+    <main>
+        <section class="apresentacao__projetos">
+            <h1 class="projetos__titulo">Projetos</h1>
+           
+            <div class="menu-apresentacao__projetos">
+                <div class="projetos__seta">
+                    
+                <a href="#"><img class="seta-projetos" src="imagens/icons8-arrow-100.png" alt="seta"></a>
+                <a href="#"><img class="seta-projetos" src="imagens/icons8-arrow-100-2.png" alt="seta"></a>
+            
+                    
+                    
+                </div>
+                <div>
+                    <select id="tipo-projeto" name="tipo-projeto">
+                        <option value="Todos">Todos</option>
+                        <option value="em-desenvolvimento">Em desenvolvimento</option>
+                        <option value="concluídos">concluídos</option>
+                    </select>
+                    
+                </div>
+                
+                
+            </div>
+            <div class="projetos-sites">
+    <div class="projeto" data-status="em-desenvolvimento">
+        <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto1">
+    </div>
+    <div class="projeto" data-status="concluídos">
+        <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto2">
+    </div>
+    <div class="projeto" data-status="em-desenvolvimento">
+        <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto3">
+    </div>
+    <div class="projeto" data-status="concluídos">
+        <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto4">
+    </div>
+    <div class="projeto" data-status="em-desenvolvimento">
+        <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto5">
+    </div>
+    <div class="projeto" data-status="concluídos">
+        <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto6">
+    </div>
+</div>
+
+            
+            <div>
+                
+            </div>
+         </section>
+        </main>
+</body>
+<script src="js/projetos.js"></script>
+</html>

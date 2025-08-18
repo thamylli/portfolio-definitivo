@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+.apresentacao__portfolio{
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    color: antiquewhite;
+    margin: 2%;
+    
+    
+}
+.portfolio-titulo{
+    display: flex;
+    margin-bottom: 0;
+    font-size: 1700%;
+    font-family: "Google Sans Code", monospace;;   
+    justify-content: center; 
+    align-items: center;
+    
+}
+.portfolio-titulo2{
+    display: flex;
+    margin: 0;
+    font-size: 1700%;
+    font-family: "Google Sans Code", monospace;;   
+    justify-content: center; 
+    align-items: center;
+    
+}
+.terra-gif{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(7, 5, 70);
+   object-fit: cover;
+   width: 900px;
+   height: 900px;
+   border-radius: 100%;
+}

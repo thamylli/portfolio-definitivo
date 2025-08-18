@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Imagens</title>
+    <link rel="stylesheet" href="estilos/certificados.css">
+    <link rel="stylesheet" href="estilos/index.css">
+</head>
+<body>
+
+    <main>
+   <section class="apresentacao__certificados">
+        <h1 class="certificados__titulo">Certificados</h1>
+        
+        <div class="certificados-conteudo" >
+            <div class="certificados-sites">
+                <section class="certificados-tipos">
+                    <div class="pasta" data-galeria="frontend">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="front-end">
+                        <p>Front-end</p>
+                    </div>
+                    <div class="pasta" data-galeria="backend">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="back-end">
+                        <p>Back-end</p>
+                    </div>
+                </section>
+                
+                <section class="certificados-tipos">
+                    <div class="pasta" data-galeria="outros">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="outros">
+                        <p>Outros</p>
+                    </div>
+                    
+                    <div class="pasta" data-galeria="dados">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="dados">
+                        <p>Dados</p>
+                    </div>
+                </section>
+                <section class="certificados-tipos">
+                    <div class="pasta" data-galeria="backend">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="back-end">
+                        <p>Back-end</p>
+                    </div>
+                    <div class="pasta" data-galeria="dados">
+                        <img class="certificados-imagens" src="/imagens/icons8-folder-400.png" alt="dados">
+                        <p>Dados</p>
+                    </div>
+                    
+                </section>
+            </div>
+            <div>
+                <img class="gif-certificados" src="imagens/Team Timothy and their Friends - DYYM Family.gif" alt="gif-certificados">
+            </div>
+        </div>
+        
+        <!-- Galerias flutuantes -->
+        <div id="frontend" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Front-end</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="imagens/frontend1.jpg" alt=""><span>descrição</span>
+                <img src="imagens/frontend2.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="backend" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Back-end</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="imagens/backend1.jpg" alt="">
+                <img src="imagens/backend2.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="dados" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Dados</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="imagens/dados1.jpg" alt="">
+                <img src="imagens/dados2.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="outros" class="galeria-flutuante">
+            <div class="aba-header">
+                <span>Outros</span>
+                <button class="fechar-aba">&times;</button>
+            </div>
+            <div class="aba-conteudo">
+                <img src="imagens/outros1.jpg" alt="">
+                <img src="imagens/outros2.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Modal para ampliar imagens -->
+        <div id="modal" class="modal">
+            <span id="fechar" class="fechar">&times;</span>
+            <img id="modal-img" class="modal-img" src="">
+        </div>
+
+   </section>
+</main>
+
+    <script src="js/certificados.js"></script>
+</body>
+</html>
