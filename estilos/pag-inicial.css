@@ -1,40 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
-.apresentacao__portfolio{
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+.apresentacao__portfolio {
     box-sizing: border-box;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: center;
     align-items: center;
     color: antiquewhite;
     margin: 2%;
-    
-    
+    text-align: center; /* garante centralização em mobile */
 }
-.portfolio-titulo{
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.portfolio-titulo {
     display: flex;
-    margin-bottom: 0;
-    font-size: 1700%;
-    font-family: "Google Sans Code", monospace;;   
-    justify-content: center; 
-    align-items: center;
-    
+    flex-direction: column;
+    gap: 15px;
+    border: solid 2px antiquewhite;
+    padding: 3%;
+    border-radius: 10px;
 }
-.portfolio-titulo2{
-    display: flex;
-    margin: 0;
-    font-size: 1700%;
-    font-family: "Google Sans Code", monospace;;   
-    justify-content: center; 
-    align-items: center;
-    
+
+.welcome,
+.bythamy {
+    font-family: 'Rubik Scribble', cursive;
+    font-size: 30px;
+    color: antiquewhite;
 }
-.terra-gif{
-    padding: 0;
-    margin: 0;
-    background-color: rgb(7, 5, 70);
-   object-fit: cover;
-   width: 900px;
-   height: 900px;
-   border-radius: 100%;
+
+.portfolio {
+    font-family: 'Rubik Scribble', cursive;
+    font-size: 150px;
+    color: antiquewhite;
+    animation: float 3s ease-in-out infinite;
 }
+
+/* 📱 Responsividade */
+@media (max-width: 1200px) {
+    .portfolio {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome,
+    .bythamy {
+        font-size: 22px;
+    }
+
+    .portfolio {
+        font-size: 70px;
+    }
+
+    .portfolio-titulo {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome,
+    .bythamy {
+        font-size: 18px;
+    }
+
+    .portfolio {
+        font-size: 45px;
+    }
+
+    .portfolio-titulo {
+        gap: 10px;
+        padding: 15px;
+    }
+}
+

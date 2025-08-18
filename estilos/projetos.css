@@ -17,25 +17,32 @@
     
 
 }
-.projetos__titulo{
+.projetos-principal{
     display: flex;
-    padding-top: 2%;
-    padding-bottom:1% ;
+    box-sizing: border-box;
+    background-color:#F27457 ;
+    border-bottom: solid 2px #000000;
+}
+.projetos__titulo{
+    background-color: rgba(255, 255, 255, 0.44);
+    display: flex;
+    padding:1%;
     justify-content: center;
     box-sizing: border-box;
+    margin: 2% 2% 0% 2%;
+    border-radius: 5px;
+    border: solid 2px #000000;
+    border-bottom: 0px;
    
 }
 .menu-apresentacao__projetos{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0%;
-    padding-left: 2%;
-    padding-bottom: 2%;
-    padding-right: 2%;
-    border-bottom: dashed 3px #000000;
+    padding: 1%;
+    border-bottom: solid 3px #000000;
     box-sizing: border-box;
-    
+    background-color: rgba(255, 255, 255, 0.44);
 
 }
 .projetos-sites{
@@ -45,12 +52,14 @@
     padding: 2%;
     gap: 4%;
     box-sizing: border-box;
+
 }
 .projetos-imagens{
-     width: 200px;
-    height: 200px;
+     width: 250px;
+    height: 250px;
     object-fit: cover;
-    border: solid #333;
+    border-radius: 5px;
+    
 }
 .seta-projetos{
   width: 3rem;
@@ -59,6 +68,12 @@
   cursor: pointer;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.44);
+}
+.botao-seta-projetos{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 .projetos__seta{
   display: flex;
@@ -83,6 +98,10 @@
     gap: 20px;
     padding: 2%;
     overflow: hidden;
+    
+    margin: 2%;
+    border-radius: 10px;
+    
 }
 
 .projeto {
@@ -90,3 +109,80 @@
     display: none;              /* escondidos até o JS ativar */
     text-align: center;
 }
+.projeto-informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    border: solid 2px #000000;
+    padding: 10px;
+    
+}
+/* ----------- RESPONSIVIDADE ----------- */
+
+/* Telas grandes (desktop) */
+@media (min-width: 1024px) {
+  .projeto {
+    flex: 0 0 calc(25% - 20px); /* até 4 por linha */
+  }
+}
+
+/* Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .projeto {
+    flex: 0 0 calc(33.33% - 20px); /* 3 por linha */
+  }
+
+  .projetos-imagens {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Celulares médios */
+@media (max-width: 767px) and (min-width: 480px) {
+  .projeto {
+    flex: 0 0 calc(50% - 20px); /* 2 por linha */
+  }
+
+  .projetos-imagens {
+    width: 180px;
+    height: 180px;
+  }
+
+  .projetos__titulo {
+    font-size: 1.2rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 479px) {
+  .projeto {
+    flex: 0 0 100%; /* 1 por linha */
+  }
+
+  .projetos-imagens {
+    width: 150px;
+    height: 150px;
+  }
+
+  .projetos__titulo {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .menu-apresentacao__projetos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projetos__seta {
+    justify-content: center;
+  }
+
+  #tipo-projeto {
+    width: 100%;
+  }
+}
+

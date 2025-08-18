@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilos/certificados.css">
     <link rel="stylesheet" href="estilos/pag-inicial.css">
     <link rel="stylesheet" href="estilos/projetos.css">
-    <link rel="stylesheet" href="estilos/rodape.css">
+    <link rel="stylesheet" href="estilos/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="estilos/contato.css">
 </head>
@@ -42,14 +42,16 @@
     </header>
     <main class="apresentacao">
         <section class="apresentacao__portfolio" id="apresentacao__portfolio">
-        <div>
-            <h1 class="portfolio-titulo">Port</h1>
-            <h1 class="portfolio-titulo2">fólio</h1>
-        </div>
-            <div><img class="terra-gif" src="imagens/output-onlinegiftools-unscreen.png" alt="terra-gif"></div>
+        <section class="portfolio-titulo">
+            <div><h1 class="welcome">Welcome to my</h1></div>
+            <div><h1 class="portfolio">PORTFÓLIO</h1></div>
+            <div><h1 class="bythamy">by Thamy</h1></div>
         </section>
+        
+            
+    </section>
          
-          <section class="apresentacao__sobre-mim">
+          <section class="apresentacao__sobre-mim" id="apresentacao__sobre-mim">
 
         <div class="menu">
   <button class="sobre-mim__botao" data-tab="formacao">Sobre Mim</button>
@@ -117,7 +119,7 @@ Desde cedo, desenvolvi uma paixão por tecnologia e programação. Essa afinidad
             </div>
 </div>
 </section>
-         <section class="apresentacao__certificados">
+         <section class="apresentacao__certificados" id="apresentacao__certificados">
         <h1 class="certificados__titulo">Certificados</h1>
         
         <div class="certificados-conteudo" >
@@ -168,7 +170,7 @@ Desde cedo, desenvolvi uma paixão por tecnologia e programação. Essa afinidad
                 <button class="fechar-aba">&times;</button>
             </div>
             <div class="aba-conteudo">
-                <img src="imagens/frontend1.jpg" alt=""><span>descrição</span>
+                <img src="imagens/Captura de tela 2025-08-16 182303.png" alt=""><span>descrição</span>
                 <img src="imagens/frontend2.jpg" alt="">
             </div>
         </div>
@@ -213,14 +215,14 @@ Desde cedo, desenvolvi uma paixão por tecnologia e programação. Essa afinidad
         </div>
 
    </section>
-         <section class="apresentacao__projetos" id="apresentacao__projetos">
-            <h1 class="projetos__titulo">Projetos</h1>
+         <section class="apresentacao__projetos">
+            <div class="projetos-principal"><h1 class="projetos__titulo">Projetos</h1></div>
            
             <div class="menu-apresentacao__projetos">
                 <div class="projetos__seta">
                     
-                <a href="#"><img class="seta" src="imagens/icons8-arrow-100.png" alt="seta"></a>
-                <a href="#"><img class="seta" src="imagens/icons8-arrow-100-2.png" alt="seta"></a>
+                <button class="botao-seta-projetos"><img class="seta-projetos" src="imagens/icons8-arrow-100.png" alt="seta"></button>
+                <button class="botao-seta-projetos"><img class="seta-projetos" src="imagens/icons8-arrow-100-2.png" alt="seta"></button>
             
                     
                     
@@ -237,41 +239,100 @@ Desde cedo, desenvolvi uma paixão por tecnologia e programação. Essa afinidad
                 
             </div>
             <div class="projetos-sites">
-                <div>
-                    <img class="projetos-imagens" src="imagens/download.jpg" alt="alugames">
-                </div>
-                <div>
-                    <img class="projetos-imagens" src="imagens/download.jpg" alt="alugames">
-                </div>
-                <div>
-                    <img class="projetos-imagens" src="imagens/download.jpg" alt="alugames">
-                </div>
-                
-            </div>
+    <div class="projeto" data-status="em-desenvolvimento">
+        <div class="projeto-informacoes">
+            <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto1">
+            <p>Alugames</p>
+        </div>
+    </div>
+    <div class="projeto" data-status="concluídos">
+        <div class="projeto-informacoes">
+            <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto1">
+            <p>Alugames</p>
+        </div>
+    </div>
+    <div class="projeto" data-status="em-desenvolvimento">
+        <div class="projeto-informacoes">
+            <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto1">
+            <p>Alugames</p>
+        </div>
+    </div>
+    <div class="projeto" data-status="concluídos">
+        <div class="projeto-informacoes">
+            <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto1">
+            <p>Alugames</p>
+        </div>
+    </div>
+    <div class="projeto" data-status="em-desenvolvimento">
+        <div class="projeto-informacoes">
+            <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto1">
+            <p>Alugames</p>
+        </div>
+    </div>
+    <div class="projeto" data-status="concluídos">
+        <div class="projeto-informacoes">
+            <img class="projetos-imagens" src="imagens/download.jpg" alt="projeto1">
+            <p>Alugames</p>
+        </div>
+    </div>
+</div>
+
             
             <div>
                 
             </div>
          </section>
          <section class="apresentacao__contato" id="apresentacao__contato">
-            <h1 class="contato-titulo">Entre em contato!</h1>
-            <h2>Topa conversar e ver como podemos trabalhar juntos? Me chame!</h2>
-            <div>
+        <section class="contato__conteudo">   
+            <div class="contato__texto">  
+                <h1 class="contato-titulo">Entre em contato!</h1>
+                <h2 class="contato-titulo2">Topa conversar e ver como podemos trabalhar juntos? Me chame!</h2>
+            </div> 
+            <div class="contato__icones">
                 <a  href="https://github.com/thamylli"><img class="icon-contato" src="imagens/github-white-icon.webp" alt="github"></a>
                 <a  href="https://www.linkedin.com/in/thamylli-ribeiro-572765377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="icon-contato" src="imagens/unnamed.png" alt="github"></a>
                 <a  href="thamylly4b@gmail.com"><img class="icon-contato" src="imagens/mail_500dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png" alt="email"></a>
                 <a  href="thamylly4b@gmail.com"><img class="icon-contato" src="imagens/instagram-new.png" alt="email"></a>
             </div>
-            
-         </section>
+        </section> 
+    </section>
     </main>
     <footer class="rodape">
-        <div class="rodape-container">
-            <p>Desenvolvido por Thamylli</p>
+        <section class="rodape-container">
+            <img src="imagens/Captura_de_tela_2025-08-17_173759-removebg-preview.png" alt="logo-footer" class="logo-footer">
+                <section class="parte1-rodape">
+                    <div class="titulo-rodape">
+                        
+                        <h1>Thamylli Mykaelli</h1>
+                    </div>
+                    <div class="contato__icones-rodape">
+                        <p class="paragrafo-rodape"><strong>GitHub: </strong><a class="link-redes" href="https://github.com/thamylli">github.com/thamylli</a></p>
+                        <p class="paragrafo-rodape"><strong>LinkedIn: </strong><a class="link-redes" href="https://www.linkedin.com/in/thamylli-mykaelli-0b1b4a1b2/">linkedin.com/thamylli</a></p>
+                        <p class="paragrafo-rodape"><strong>Email: </strong><a class="link-redes" href="https://www.instagram.com/thamyy.sz/">thamylly4b@gmail.com</a></p>
+                    </div>
+                </section>
+            
+            <section class="atalhos-rodape">
+                <h1>Atalhos</h1>
+                <div class="atalhos-rodape__links">
+                    
+                    <a class="atalho-link" href="sobre.html">Sobre</a>
+                    <a class="atalho-link" href="projetos.html">Projetos</a>
+                    <a class="atalho-link" href="contato.html">Contato</a>
+                </div>
+
+            </section>
+        </section>
+        <section class="direitos-rodape">
+            <div>
+                <p class="desenvolvido-rodape">@ Desenvolvido por Thamylli</p>
+            </div>
+        </section>
     </footer> 
     
 </body>
 <script src="js/dark-mode.js" defer></script>
 <script src="js/sobre-mim.js"></script>
 <script src="js/certificados.js"></script>
+<script src="js/projetos.js"></script>
 </html>

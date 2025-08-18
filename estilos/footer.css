@@ -1,0 +1,121 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.rodape-container {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap; /* permite quebra de linha quando faltar espaço */
+}
+
+.logo-footer {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.titulo-rodape {
+    display: flex;
+    align-items: center;
+}
+
+.parte1-rodape {
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px black;
+    border-left: solid 1px black;
+    padding: 2%;
+    gap: 10px;
+    text-align: center;
+}
+
+.atalhos-rodape {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    text-align: center;
+}
+
+.atalhos-rodape__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.atalho-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.contato__icones-rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-redes {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.paragrafo-rodape {
+    display: flex;
+    align-items: center;
+}
+
+.direitos-rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px black;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+/* ======================== */
+/*       RESPONSIVIDADE     */
+/* ======================== */
+@media (max-width: 900px) {
+    .rodape-container {
+        flex-direction: column; /* empilha logo, contatos e atalhos */
+        align-items: center;
+        text-align: center;
+    }
+
+    .parte1-rodape {
+        border: none; /* remove bordas laterais no mobile */
+    }
+
+    .logo-footer {
+        width: 150px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .atalho-link,
+    .link-redes {
+        font-size: 1rem; /* diminui fontes para caber melhor */
+    }
+
+    .logo-footer {
+        width: 120px;
+        height: 100px;
+    }
+}

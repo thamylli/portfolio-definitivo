@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     border: 0;
@@ -29,7 +30,7 @@ body{
     background-color:var(--azul);
     box-sizing: border-box;
     color: var(--preto);
-    height: 100vh;
+    
     
 }
 
