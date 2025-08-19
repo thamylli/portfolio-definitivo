@@ -42,7 +42,10 @@
     color: antiquewhite;
     animation: float 3s ease-in-out infinite;
 }
-
+.portfolio:hover {
+    color: pink;
+    transition: color 0.3s ease-in-out;
+}
 /* 📱 Responsividade */
 @media (max-width: 1200px) {
     .portfolio {

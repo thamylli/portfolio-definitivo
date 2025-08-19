@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
 .apresentacao__certificados{
     background-color: rgb(223, 153, 242);
     margin: 2%;
@@ -11,6 +13,8 @@
 }
 
 .certificados__titulo{
+    font-family:  'Rubik Scribble', cursive;
+    font-size: 30px;
     display: flex;
     padding-top: 2%;
     padding-bottom:1%;

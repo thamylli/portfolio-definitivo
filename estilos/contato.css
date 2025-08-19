@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
 .apresentacao__contato {
     display: flex;
     flex-direction: column;
@@ -28,6 +30,8 @@
 
 .contato-titulo {
     font-size: 2rem;
+    font-family: 'Rubik Scribble', cursive;
+    color: #ccc;
 }
 
 .contato-titulo2 {
