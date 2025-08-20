@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+.cabecalho-container{
+     position: fixed;  /* fixa no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: white;
+    z-index: 1000; /* garante que fique acima dos outros elementos */
+}
+.nuvenzinha{
+    position: fixed;  /* fixa também */
+    top: 10%; /* distância do topo = altura do cabeçalho */
+    left: 0;
+    width: 100%;
+    height: 50px; /* altura da nuvem */
+    
+    background-image: url('/imagens/bg-header-top.png');
+    background-repeat: repeat-x;
+    z-index: 900; /* abaixo do cabeçalho */
+}
+.cabecalho-sobre{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    color: #253659;
+}
+.cabecalho-sobre:hover{
+    color: rgba(20, 173, 168, 0.604);
+
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 150px;
+    font-size: 1.5rem;
+}
+.logo{
+    object-fit: cover;
+    cursor: pointer;
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+}
+#mudanca-tema{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cabecalho-logo{
+    box-sizing: border-box;
+    
+}
+#mudanca-tema img{
+    fill: #F2EBBF;
+}
+
+#mudanca-tema img:last-child{
+    display: none;
+}
+.dark-mode #mudanca-tema img:first-child{
+    display: none;
+}
+.dark-mode #mudanca-tema img:last-child{
+    display: block;
+}
+.botao__mudanca-de-tema{
+    height: 55px;
+    width: 55px;
+}
+.botao__mudanca-de-tema:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+/* botão hamburguer */
+.hamburguer {
+    display: none; /* escondido no desktop */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #253659;
+}
+
+/* menu mobile escondido */
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.881);
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    z-index: 1100;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: #253659;
+    font-size: 1.2rem;
+}
+
+.menu-mobile a:hover {
+    color: rgba(20, 173, 168, 0.604);
+}
+
+/* Mostrar menu quando ativado */
+.menu-mobile.ativo {
+    display: flex;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cabecalho-menu {
+        display: none; /* esconde menu desktop */
+    }
+    .hamburguer {
+        display: block; /* mostra botão hamburguer */
+    }
+   
+}
+

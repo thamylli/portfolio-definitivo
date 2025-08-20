@@ -115,6 +115,7 @@
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
+    height: 250px;
 }
 
 .aba-conteudo img {
@@ -204,5 +205,31 @@
     }
 }
 
+/* Scrollbar personalizada (para navegadores baseados em WebKit) */
+.aba-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    max-height: 60vh; /* altura máxima relativa à tela */
+    overflow-y: auto; /* ativa scroll vertical */
+    justify-content: center; /* centraliza o conteúdo */
+}
+.aba-conteudo::-webkit-scrollbar {
+    width: 8px;
+}
 
+.aba-conteudo::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+.aba-conteudo::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+.aba-conteudo::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
 

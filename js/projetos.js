@@ -4,11 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const setaDireita = document.querySelectorAll(".seta-projetos")[1];
     const filtro = document.getElementById("tipo-projeto");
 
-    let pagina = 0;               // página atual
-    const porPagina = 4;          // quantos aparecem por vez
-    let projetosFiltrados = [...projetos]; // lista atual
+    let pagina = 0;               
+    const porPagina = 3;   // AGORA EXIBINDO 3 POR PÁGINA
+    let projetosFiltrados = [...projetos]; 
 
-    // Função para exibir os projetos da página atual
     function mostrarProjetos() {
         projetos.forEach(p => p.style.display = "none");
 
@@ -20,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Atualiza lista ao trocar filtro
     filtro.addEventListener("change", () => {
         const valor = filtro.value;
         if (valor === "Todos") {
@@ -28,32 +26,28 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             projetosFiltrados = [...projetos].filter(p => p.dataset.status === valor);
         }
-        pagina = 0; // reinicia na primeira página
+        pagina = 0;
         mostrarProjetos();
     });
 
-    // Botão esquerda
     setaEsquerda.addEventListener("click", () => {
         if (pagina > 0) {
             pagina--;
         } else {
-            // se já está na primeira, volta para a última
             pagina = Math.ceil(projetosFiltrados.length / porPagina) - 1;
         }
         mostrarProjetos();
     });
 
-    // Botão direita
     setaDireita.addEventListener("click", () => {
         if ((pagina + 1) * porPagina < projetosFiltrados.length) {
             pagina++;
         } else {
-            // se chegou no fim, volta para o início
             pagina = 0;
         }
         mostrarProjetos();
     });
 
-    mostrarProjetos(); // inicializa
+    mostrarProjetos();
 });
 

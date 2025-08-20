@@ -23,7 +23,7 @@
     display: flex;
     box-sizing: border-box;
     background-color:#F27457 ;
-    border-bottom: solid 2px #000000;
+    
 }
 .projetos__titulo{
     background-color: rgba(255, 255, 255, 0.44);
@@ -32,8 +32,8 @@
     justify-content: center;
     box-sizing: border-box;
     margin: 2% 2% 0% 2%;
-    border-radius: 5px;
-    border: solid 2px #000000;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 40px;
     border-bottom: 0px;
     font-family: 'Rubik Scribble', cursive;
    
@@ -58,10 +58,11 @@
 
 }
 .projetos-imagens{
-     width: 250px;
+     width: 390px;
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
+    border: solid;
     
 }
 .seta-projetos{
@@ -111,6 +112,40 @@
     flex: 0 0 calc(25% - 20px); /* 4 por linha */
     display: none;              /* escondidos até o JS ativar */
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.texto-projetos{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.texto-projetos h1{
+  width: 2rem;
+  height: 2rem;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: #00000000;
+  border-radius: 100%;
+  border: solid 2px #000000;
+  background-color: rgba(255, 255, 255, 0.44);
+}
+.texto-projetos h1:hover{
+  transform: scale(1.1);
+}
+
+.projeto p{
+  background-color: rgba(234, 144, 144, 0.566);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.projeto p:hover{
+  background-color: rgba(234, 144, 144, 0.866);
+  color: #000000;
+  transition: 0.3s;
+
 }
 .projeto-informacoes{
     display: flex;
@@ -120,6 +155,7 @@
     justify-content: center;
     border: solid 2px #000000;
     padding: 10px;
+    border-radius: 10px;
     
 }
 /* ----------- RESPONSIVIDADE ----------- */
@@ -127,9 +163,10 @@
 /* Telas grandes (desktop) */
 @media (min-width: 1024px) {
   .projeto {
-    flex: 0 0 calc(25% - 20px); /* até 4 por linha */
+    flex: 0 0 calc(33.33% - 20px); /* agora 3 por linha */
   }
 }
+
 
 /* Tablets */
 @media (max-width: 1023px) and (min-width: 768px) {

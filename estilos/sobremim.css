@@ -111,6 +111,21 @@
   height: 80px;
   border: solid 2px black;
   border-radius: 20px;
+  background-color: rgba(102, 110, 193, 0.233);
+}
+.imagem-habilidades:hover {
+  animation: blink 1s infinite;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.701);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: blink 1s infinite;
+  
+  
+
 }
 
 .conjunto-habilidades {
