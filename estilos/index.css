@@ -37,3 +37,28 @@ body{
     
 }
 
+/* Firefox */
+html {
+  scrollbar-width: auto; /* largura padrão */
+  scrollbar-color: #ed9595 #ffffff; /* cor do scroll e cor do fundo */
+}
+
+/* Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  width: 16px; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd; /* fundo do trilho */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444; /* cor da barrinha */
+  border-radius: 0; /* deixa quadrado */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222; /* cor quando passa o mouse */
+}
+
+
